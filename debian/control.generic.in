@@ -31,8 +31,10 @@ Standards-Version: 4.1.2
 Package: delphix-kernel-@@KVERS@@
 Provides: delphix-kernel-generic, delphix-kernel
 Architecture: any
-Depends: linux-generic-hwe-18.04,
-         linux-tools-generic-hwe-18.04,
+Depends: linux-image-@@KVERS@@,
+         linux-modules-extra-@@KVERS@@,
+         linux-headers-@@KVERS@@,
+         linux-tools-@@KVERS@@,
          zfs-modules-@@KVERS@@,
          zfs-headers-@@KVERS@@,
          linux-image-@@KVERS@@,
